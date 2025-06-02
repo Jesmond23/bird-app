@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Submit Observation</title>
+    </head>
+
+    <body>
+        <h1>Submit a bird observation</h1>
+        <form method="POST">
+            {% csrf_token %}
+            {{form.as_p}}
+            <button type = 'submit'>Submit</button>
+        </form>
+    </body>
+</html>

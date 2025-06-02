@@ -1,0 +1,15 @@
+<!-- templates/submit_success.html -->
+<!DOCTYPE html>
+<html>
+  <head><title>Success</title></head>
+  <body>
+    {% if type == "species" %}
+    <h2>Species submitted successfully!</h2>
+    {% else %}
+    <h2>Observation submitted successfully!</h2>
+  {% endif %}
+  <a href="{% url 'sightings:submit-observation' %}">Submit another observation</a> |
+  <a href="{% url 'sightings:submit-species' %}">Submit another species</a>
+
+  </body>
+</html>
